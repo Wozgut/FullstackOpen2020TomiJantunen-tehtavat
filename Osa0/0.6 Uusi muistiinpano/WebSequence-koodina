@@ -1,0 +1,13 @@
+
+note over selain 
+Kun on painettu "save"
+Jo ladattu spa.js-koodista suoritetaan
+"save" nappiin liittyvä osa. Se lisää listaan
+lähetetyn viestin (näkyy suoraan käyttäjälle)
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over palvelin
+Palvelin lisää saadut tiedot
+myös data.json-tiedostoon
+end note 
