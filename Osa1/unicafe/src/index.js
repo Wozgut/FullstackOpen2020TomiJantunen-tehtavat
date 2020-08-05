@@ -29,7 +29,7 @@ const Statistics = ({good, neutral, bad}) => {
 
   const all=good+neutral+bad
   const average=(good+neutral*0+bad*(-1))/all
-  const positive=good/all
+  const positive=(good/all)*100
 
   return(
     <table>
@@ -39,7 +39,7 @@ const Statistics = ({good, neutral, bad}) => {
     <StatisticsLine text="bad" value={bad}/>
     <StatisticsLine text="all" value={all}/>
     <StatisticsLine text="average" value={average}/>
-    <StatisticsLine text="positive" value={positive}/>
+    <StatisticsLine text="positive" value={positive+" %"}/>
      </tbody>
     </table>
   )
